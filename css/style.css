@@ -1,5 +1,115 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    grid-template-rows: 80px 400px 400px 400px 400px 100px;
+    grid-template-areas: 
+    "he na"
+    "s1 s1"
+    "s3 s3"
+    "s4 s4"
+    "fo fo";
+}
+
+header {
+    height: 80px;
+}
+
+nav {
+    display: flex;
+     background-color: pink;
+     height: 80px;
+     grid-area: na;
+ }
+
+.button{
+    background-color: rgba(51, 51, 51, 0.05);
+    border-radius: 25px;
+    border-width: 0;
+    border-color: solid black;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .button_sign_in {
     
+  }
+
+  
+
+  #container_nav_buttons {
+    background-color: rgba(10, 35, 103, 0.05);
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    color: #333333;
+    font-weight: 500;
+    gap: 5px;
+    /* margin: auto; */
+    transition: all 200ms;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    transition: all 200ms;
+  }
+
+
+  .button_sign_in{
+    background-color: rgba(10, 35, 103, 0.05);
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    color: #333333;
+    font-weight: 500;
+    gap: 5px;
+    margin: auto;
+    transition: all 200ms;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    transition: all 200ms;
+  }
+
+header {
+    grid-area: he;
+    background: lightcoral;
+}
+
+#section_1 {
+    grid-area: s1;
+    background: rgb(144, 19, 19);
+}
+
+#section_3 {
+    grid-area: s3;
+    background: rgb(3, 28, 28);
+}
+
+#section_4 {
+    grid-area: s4;
+    background: rgb(40, 156, 156);
+}
+
+footer {
+    grid-area: fo;
+    background: darkorchid; 
 }
