@@ -66,10 +66,104 @@ article {
     height: 250px;
 }
 
+ .recipe {
+    margin-bottom: 40px;
+    display: grid;
+    width: 80%;
+  }
+ 
+  .recipe-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  .recipe-number {
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .like-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+ 
+  .recipe img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+ 
+  .recipe h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+ 
+  .recipe-rating {
+    font-size: 24px;
+    color: #f2b01e;
+    margin-bottom: 20px;
+  }
+ 
+  .recipe-rating .fa {
+    margin-right: 5px;
+  }
+ 
+  .recipe-rating .checked {
+    color: #ffc107;
+  }
+ 
+  .recipe p {
+    font-size: 16px;
+    color: #666;
+  }
+
+  #foods_to_try{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
 
   
 
-@media (max-width: 768px) {
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  @media (max-width: 768px) {
     .articles {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -82,9 +176,6 @@ article {
      margin: 20px;
     }
 
-
  }
-
-
 
  
