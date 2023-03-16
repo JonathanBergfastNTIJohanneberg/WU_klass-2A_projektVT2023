@@ -7,10 +7,11 @@ header {
     background-color: #FFA000;
     color: white;
     padding: 20px;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
+  
+}
+
+#navbar {
+  overflow: hidden;
 }
 
 nav {
@@ -44,7 +45,7 @@ nav li a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: black;
+    background-color: rgb(193, 99, 11);
 }
 
 .column {
@@ -54,7 +55,15 @@ nav li a:hover {
   justify-self: center;
 }
 
-article {
+
+#foods_to_try {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.article-recepie{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,89 +76,63 @@ article {
     height: 250px;
 }
 
- .recipe {
-    margin-bottom: 40px;
-    display: grid;
-    width: 80%;
-  }
- 
-  .recipe-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
- 
-  .recipe-number {
-    background-color: #f2f2f2;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
- 
-  .like-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
- 
-  .recipe img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-bottom: 20px;
-  }
- 
-  .recipe h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
- 
-  .recipe-rating {
-    font-size: 24px;
-    color: #f2b01e;
-    margin-bottom: 20px;
-  }
- 
-  .recipe-rating .fa {
-    margin-right: 5px;
-  }
- 
-  .recipe-rating .checked {
-    color: #ffc107;
-  }
- 
-  .recipe p {
-    font-size: 16px;
-    color: #666;
-  }
+.recipe {
+  display: grid;
+  justify-items: center;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0.1);
+  border-radius: 20px;
+}
 
-  #foods_to_try{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    background-color: magenta;
-  }
+.recipe img {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
 
+.recipe h2 {
+ 
+}
+
+.recipe-header {
+  display: flex;
+  width: 90%;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recipe-number {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.like-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  background-color: #0069d9;
+}
 
   .welcome_to_page {
     height: 400px;
     position: relative;
     width: 100%;
-    background-image: url(/img/culinary_tools.jpg);
+    background-image: url(/img/taco_mexicana.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -159,6 +142,46 @@ article {
     width: 100%;
   }
 
+  .hero-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* adjust the color to your liking */
+    text-align: center;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-overlay p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-overlay ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero-overlay li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-overlay li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .hero-overlay li a:hover {
+    color: #f7d24d; /* adjust the hover color to your liking */
+  }
   
   @media only screen and (max-width: 768px) {
 
@@ -189,6 +212,20 @@ article {
   
     .recipe {
       width: 100%;
+    }
+
+    .hero-overlay {
+      text-align: center;
+      padding: 20px;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    li {
+      margin-bottom: 10px;
     }
   
   }
