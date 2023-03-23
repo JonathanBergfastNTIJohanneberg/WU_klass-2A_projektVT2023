@@ -1,6 +1,8 @@
 body {
   margin: 0;
+  box-sizing: border-box;
   padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
@@ -11,7 +13,7 @@ header {
 }
 
 #navbar {
-overflow: hidden;
+  overflow: hidden;
 }
 
 nav {
@@ -51,92 +53,125 @@ nav li a:hover {
 .column {
   width: calc(100% - 20px);
   margin: 20px;
-align-self: center;
-justify-self: center;
+  align-self: center;
+  justify-self: center;
 }
 
 
 #foods_to_try {
-display: grid;
+  display: grid;
 }
-#slideshow {
+
+.slideshow {
   overflow: hidden;
   height: 250px;
   width: 580px;
   margin: 0 auto;
 }
- 
+
+.slide-titel {
+  backdrop-filter: blur(3px);
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  height: auto;
+  margin: 0px;
+}
+
 /* höjden och bredden på mina slides */
 .slide {
   float: left;
   height: 250px;
   width: 580px;
 }
- 
+
+.slide-number-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  margin: 0px;
+  right: 25%;
+}
+
+.slide-number {
+  backdrop-filter: blur(3px);
+  margin: 0px;
+  height: 250px
+}
+
 /* Add animation to the slides */
 .slide-wrapper {
-   
-/* den totala widthen på skideshowen*/
-  width: calc(580px * 5);
- 
-/* hur lång tid det tar för animation*/
-  animation: slide 15s ease infinite;
+
+  /* den totala widthen på skideshowen*/
+  width: calc(580px * 4);
+
+  /* hur lång tid det tar för animation*/
+  animation: slide 20s  infinite;
 }
- 
+
 /* styling för varje slide*/
 .slide:nth-child(1) {
-  background-image: url(/img/breakfeast.jpg);
-  background-position: center;
-background-size: cover;
-}
- 
-.slide:nth-child(2) {
-  background-image: url(/img/culinary_tools.jpg);
-  background-position: center;
-background-size: cover;
-}
- 
-.slide:nth-child(3) {
-  background-image: url(/img/recipe1.jpg);
-  background-position: center;
-background-size: cover;
-}
- 
-.slide:nth-child(4) {
-  background-image: url(/img/taco_mexicana.jpg);
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/breakfeast.jpg);
   background-position: center;
   background-size: cover;
 }
 
-.slide:nth-child(5) {
-  background-image: url(/img/taco_mexicana.jpg);
+.slide-number:hover{
+  animation-play-state: paused;
+}
+
+.slide:nth-child(2) {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/culinary_tools.jpg);
   background-position: center;
   background-size: cover;
 }
- 
- 
+
+.slide:nth-child(3) {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/recipe1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide:nth-child(4) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/taco_mexicana.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
 /* Definerar animationerna till mina slides/divs */
 @keyframes slide {
-   
-/*kalkylerar margin-left för vardera slide */
+
+  /*kalkylerar margin-left för vardera slide */
   10% {
     margin-left: 0px;
   }
- 
-  20% {
+
+  30% {
     margin-left: calc(-580px * 1);
   }
- 
-  40% {
+
+  40%{
+    margin-left: calc(-580px * 1);
+  }
+
+  50% {
     margin-left: calc(-580px * 2);
   }
- 
+
   60% {
+    margin-left: calc(-580px * 2);
+  }
+
+  70% {
     margin-left: calc(-580px * 3);
   }
 
-  80%{
-    margin-left: calc(-580px * 4);
+  80% {
+    margin-left: calc(-580px * 3);
   }
 
 }
@@ -150,31 +185,31 @@ background-size: cover;
 }
 
 .article_recipe_title {
-  display: flex; 
+  display: flex;
   width: 100%;
   height: 50%;
   justify-content: center
 }
 
 swiper-container {
-width: 100%;
-padding-top: 50px;
-padding-bottom: 50px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 swiper-slide {
-background-position: center;
-background-size: cover;
-width: 300px;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
 
 }
 
 swiper-slide img {
-display: block;
-width: 100%;
+  display: block;
+  width: 100%;
 }
 
-.article-recepie{
+.article-recipe {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,65 +220,65 @@ width: 100%;
   margin-bottom: 20px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0.1);
   border-radius: 20px 20px 10px 10px;
-  
+
 }
 
 .recipe {
-display: grid;
-justify-items: center;
-margin-top: 20px;
-margin-right: 10px;
-margin-left: 10px;
-background-color: white;
-padding: 20px;
-margin-bottom: 20px;
-box-shadow: 0px 2px 5px rgba(0, 0, 0.1);
-border-radius: 20px;
+  display: grid;
+  justify-items: center;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: white;
+  
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0.1);
+  border-radius: 20px;
 }
 
 .recipe img {
-width: 100%;
-margin-top: 10px;
-border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
 
 
 
 .recipe-header {
-display: flex;
-width: 90%;
-border-radius: 5px;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  width: 90%;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .recipe-number {
-background-color: #007bff;
-color: #fff;
-font-weight: bold;
-padding: 5px 10px;
-border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
 }
 
 .like-button {
-background-color: #007bff;
-color: #fff;
-border: none;
-padding: 5px 10px;
-border-radius: 5px;
-cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .like-button:hover {
-background-color: #0069d9;
+  background-color: #0069d9;
 }
 
 .welcome_to_page {
   height: 400px;
   position: relative;
-
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/taco_mexicana.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/taco_mexicana.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -261,9 +296,10 @@ background-color: #0069d9;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff; /* adjust the color to your liking */
+  color: #fff;
+  /* adjust the color to your liking */
   text-align: center;
-  
+
 }
 
 .hero-overlay h1 {
@@ -295,26 +331,27 @@ background-color: #0069d9;
 }
 
 .hero-overlay li a:hover {
-  color: #f7d24d; /* adjust the hover color to your liking */
+  color: #f7d24d;
+  /* adjust the hover color to your liking */
 }
 
 
 
 
 #inbetween_text {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-#inbetween_text_h2{
-font-size: xx-large;
+#inbetween_text_h2 {
+  font-size: xx-large;
 }
 
-#inbetween_text_h3{
-font-size: x-large;
+#inbetween_text_h3 {
+  font-size: x-large;
 }
 
 #inbetween_text_ul {
@@ -324,11 +361,11 @@ font-size: x-large;
 }
 
 
-.carousel_cell{
+.carousel_cell {
   background-image: url(/img/recipe1.jpg);
   background-size: cover;
   background-position: center center;
-  
+
 }
 
 footer {
@@ -369,7 +406,7 @@ footer {
   font-size: 1.2rem;
 }
 
-.footer_ul{
+.footer_ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -379,7 +416,7 @@ footer {
   margin-bottom: 5px;
 }
 
-.footer_a{
+.footer_a {
   color: #333;
   text-decoration: none;
 }
@@ -401,72 +438,71 @@ i {
   #navbar ul {
     display: flex;
     flex-direction: column;
-}
+  }
 
-#navbar li {
+  #navbar li {
     margin-bottom: 10px;
-}
+  }
 
-/* Welcome section */
-.welcome_to_page {
+  /* Welcome section */
+  .welcome_to_page {
     height: auto;
-    
-    text-align: center;
-}
 
-.hero-overlay {
+    text-align: center;
+  }
+
+  .hero-overlay {
     margin: 0 auto;
     max-width: 500px;
-}
+  }
 
-.hero-overlay h1 {
+  .hero-overlay h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-}
+  }
 
-/* Articles section */
-.articles {
+  /* Articles section */
+  .articles {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+  }
 
-.column {
+  .column {
     width: 100%;
     margin-bottom: 20px;
-}
+  }
 
-/* Recipe section */
-.recipe {
+  /* Recipe section */
+  .recipe {
     margin: 20px auto;
     width: 80%;
-}
+  }
 
-.recipe-number {
+  .recipe-number {
     font-size: 1.5rem;
-}
+  }
 
-.recipe-header {
+  .recipe-header {
     display: flex;
     justify-content: space-between;
-}
+  }
 
-.like-button {
+  .like-button {
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-}
+  }
 
-footer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.section_footer {
-  width: 50%;
-}
+  .section_footer {
+    width: 50%;
+  }
 
 }
-
