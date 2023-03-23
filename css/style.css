@@ -59,13 +59,94 @@ justify-self: center;
 #foods_to_try {
 display: grid;
 }
+#slideshow {
+  overflow: hidden;
+  height: 250px;
+  width: 580px;
+  margin: 0 auto;
+}
+ 
+/* höjden och bredden på mina slides */
+.slide {
+  float: left;
+  height: 250px;
+  width: 580px;
+}
+ 
+/* Add animation to the slides */
+.slide-wrapper {
+   
+/* den totala widthen på skideshowen*/
+  width: calc(580px * 5);
+ 
+/* hur lång tid det tar för animation*/
+  animation: slide 15s ease infinite;
+}
+ 
+/* styling för varje slide*/
+.slide:nth-child(1) {
+  background-image: url(/img/breakfeast.jpg);
+  background-position: center;
+background-size: cover;
+}
+ 
+.slide:nth-child(2) {
+  background-image: url(/img/culinary_tools.jpg);
+  background-position: center;
+background-size: cover;
+}
+ 
+.slide:nth-child(3) {
+  background-image: url(/img/recipe1.jpg);
+  background-position: center;
+background-size: cover;
+}
+ 
+.slide:nth-child(4) {
+  background-image: url(/img/taco_mexicana.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide:nth-child(5) {
+  background-image: url(/img/taco_mexicana.jpg);
+  background-position: center;
+  background-size: cover;
+}
+ 
+ 
+/* Definerar animationerna till mina slides/divs */
+@keyframes slide {
+   
+/*kalkylerar margin-left för vardera slide */
+  10% {
+    margin-left: 0px;
+  }
+ 
+  20% {
+    margin-left: calc(-580px * 1);
+  }
+ 
+  40% {
+    margin-left: calc(-580px * 2);
+  }
+ 
+  60% {
+    margin-left: calc(-580px * 3);
+  }
+
+  80%{
+    margin-left: calc(-580px * 4);
+  }
+
+}
 
 
 .article_list_content {
   width: 100%;
   height: 200px;
+  overflow: hidden;
   border-radius: 0px 0px 10px 10px;
-  background: red;
 }
 
 .article_recipe_title {
@@ -242,6 +323,13 @@ font-size: x-large;
   padding: 0;
 }
 
+
+.carousel_cell{
+  background-image: url(/img/recipe1.jpg);
+  background-size: cover;
+  background-position: center center;
+  
+}
 
 footer {
   display: flex;

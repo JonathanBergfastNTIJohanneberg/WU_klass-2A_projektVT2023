@@ -1,287 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Recepticus</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Recepticus</title>
 </head>
+
 <body>
-    <header class="sticky">
-        <nav id="navbar" class="sticky">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">My Liked Recipes</a></li>
-                <li><a href="#">Top Rated Recipes</a></li>
-                <li><a href="#">Recommendations</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="welcome_to_page">
-      <div class="hero-overlay">
-        <h1>Welcome to our Recipe Collection!</h1>
-        <p>Looking for some culinary inspiration? Check out our top recipe picks below.</p>
-        <ul>
-          <li><a href="#">Roasted Chicken with Vegetables</a></li>
-          <li><a href="#">Pesto Pasta Salad</a></li>
-          <li><a href="#">Grilled Salmon with Mango Salsa</a></li>
-        </ul>
-      </div>
-    </section>
-
-    
-
-    <section class="articles">
-        <div class="column" id="column_1">
-            <article class="article-recepie">
-               <section class="article_recipe_title"><h2>Trending Recipes</h2></section>
-
-               <section class="article_list_content">
-                <ul>
-                    <li>Spaghetti Carbonara</li>
-                    <li>Chicken Alfredo</li>
-                    <li>Vegan Pad Thai</li>
-                    <li>Beef Stroganoff</li>
-                    <li>Shrimp Scampi</li>
-                </ul>
-              </section>
-              <section class="article_footer"><button class="article_footer_button">Read More</button><span class="fa fa-heart"></span> <span  class="fa fa-share-alt"></span></section>
-            </article>
-        </div>
-
-        <div class="column" id="column_2">
-            <article class="article-recepie">
-              <section class="article_recipe_title"> <h2>Top Rated Recipes</h2></section>
-
-              <section class="article_list_content">
-                <ul>
-                    <li>Beef Wellington</li>
-                    <li>Chicken Curry</li>
-                    <li>Spicy Ramen</li>
-                    <li>Vegetable Stir Fry</li>
-                    <li>Shepherd's Pie</li>
-                </ul>
-              </section>
-              <section class="article_footer"><button class="article_footer_button">Read More</button> <span  class="fa fa-star checked"></span> <span  class="fa fa-star checked"></span></section>
-            </article>
-        </div>
-
-        <div class="column" id="column_3">
-            <article class="article-recepie">
-              <section class="article_recipe_title"> <h2>My Liked Recipes</h2></section>
-
-              <section class="article_list_content">
-                <ul>
-                    <li>Homemade Pizza</li>
-                    <li>Guacamole</li>
-                    <li>Roasted Chicken</li>
-                    <li>Beef Tacos</li>
-                    <li>Chocolate Chip Cookies</li>
-                </ul>
-              </section>
-              <section class="article_footer"><button class="article_footer_button">Read More</button> <span  class="fa fa-star checked"></span> <span  class="fa fa-star checked"></span></section>
-            </article>
-        </div>
-
-        <div class="column" id="column_4">
-            <article class="article-recepie">
-              <section class="article_recipe_title"> <h2>Recipe Recommendations</h2></section>
-              <section class="article_list_content">
-                <ul>
-                    <li>Garlic Butter Steak</li>
-                    <li>Lemon Butter Chicken</li>
-                    <li>Spinach and Feta Stuffed Chicken</li>
-                    <li>Cauliflower Fried Rice</li>
-                    <li>Butternut Squash Soup</li>
-                </ul>
-              </section>
-              <section class="article_footer"><button class="article_footer_button">Read More</button> <span  class="fa fa-star checked"></span> <span  class="fa fa-star checked"></span></section>
-            </article>
-        </div>
-    </section>
-
-
-    <section id="inbetween_text">
-      <ul id="inbetween_text_ul">
-        <li><h2 id="inbetween_text_h2">Try Some Of Our</h2></li>
-        <li><h3 id="inbetween_text_h3">Tasty Recipes!</h3></li>
+  <header class="sticky">
+    <nav id="navbar" class="sticky">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">My Liked Recipes</a></li>
+        <li><a href="#">Top Rated Recipes</a></li>
+        <li><a href="#">Recommendations</a></li>
       </ul>
-    </section>
+    </nav>
+  </header>
 
-    <section id="foods_to_try">
-      <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
-        slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
-        coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
-        <swiper-slide>
-          <article class="recipe">
-              <header class="recipe-header">
-                <div class="recipe-number">1</div>
-                <button class="like-button">Like</button>
-              </header>
-              <img src="img/recipe1.jpg" alt="Recipe 1">
-              <h2>Spaghetti Carbonara</h2>
-              <div class="recipe-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
-            </article>
-        </swiper-slide>
-        <swiper-slide>
-          <article class="recipe">
-              <header class="recipe-header">
-                <div class="recipe-number">1</div>
-                <button class="like-button">Like</button>
-              </header>
-              <img src="img/recipe1.jpg" alt="Recipe 1">
-              <h2>Spaghetti Carbonara</h2>
-              <div class="recipe-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
-            </article>
-        </swiper-slide>
-        <swiper-slide>
-          <article class="recipe">
-              <header class="recipe-header">
-                <div class="recipe-number">1</div>
-                <button class="like-button">Like</button>
-              </header>
-              <img src="img/recipe1.jpg" alt="Recipe 1">
-              <h2>Spaghetti Carbonara</h2>
-              <div class="recipe-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
-            </article>
-        </swiper-slide>
-        <swiper-slide>
-          <article class="recipe">
-              <header class="recipe-header">
-                <div class="recipe-number">1</div>
-                <button class="like-button">Like</button>
-              </header>
-              <img src="img/recipe1.jpg" alt="Recipe 1">
-              <h2>Spaghetti Carbonara</h2>
-              <div class="recipe-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
-            </article>
-        </swiper-slide>
-        <swiper-slide>
-          <article class="recipe">
-              <header class="recipe-header">
-                <div class="recipe-number">1</div>
-                <button class="like-button">Like</button>
-              </header>
-              <img src="img/recipe1.jpg" alt="Recipe 1">
-              <h2>Spaghetti Carbonara</h2>
-              <div class="recipe-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
-            </article>
-        </swiper-slide>
-        <swiper-slide>
-          <article class="recipe">
-              <header class="recipe-header">
-                <div class="recipe-number">1</div>
-                <button class="like-button">Like</button>
-              </header>
-              <img src="img/recipe1.jpg" alt="Recipe 1">
-              <h2>Spaghetti Carbonara</h2>
-              <div class="recipe-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
-            </article>
-        </swiper-slide>
-        <swiper-slide>
-          <article class="recipe">
-              <header class="recipe-header">
-                <div class="recipe-number">1</div>
-                <button class="like-button">Like</button>
-              </header>
-              <img src="img/recipe1.jpg" alt="Recipe 1">
-              <h2>Spaghetti Carbonara</h2>
-              <div class="recipe-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
-            </article>
-        </swiper-slide>
-        <swiper-slide>
-          <article class="recipe">
-              <header class="recipe-header">
-                <div class="recipe-number">1</div>
-                <button class="like-button">Like</button>
-              </header>
-              <img src="img/recipe1.jpg" alt="Recipe 1">
-              <h2>Spaghetti Carbonara</h2>
-              <div class="recipe-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
-            </article>
-        </swiper-slide>
-        <swiper-slide>
-          <article class="recipe">
-              <header class="recipe-header">
-                <div class="recipe-number">1</div>
-                <button class="like-button">Like</button>
-              </header>
-              <img src="img/recipe1.jpg" alt="Recipe 1">
-              <h2>Spaghetti Carbonara</h2>
-              <div class="recipe-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-              </div>
-              <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
-            </article>
-        </swiper-slide>
-      </swiper-container>
+  <section class="welcome_to_page">
+    <div class="hero-overlay">
+      <h1>Welcome to our Recipe Collection!</h1>
+      <p>Looking for some culinary inspiration? Check out our top recipe picks below.</p>
+      <ul>
+        <li><a href="#">Roasted Chicken with Vegetables</a></li>
+        <li><a href="#">Pesto Pasta Salad</a></li>
+        <li><a href="#">Grilled Salmon with Mango Salsa</a></li>
+      </ul>
+    </div>
   </section>
-   
+
+
+
+  <section class="articles">
+    <div class="column" id="column_1">
+      <article class="article-recepie">
+        <section class="article_recipe_title">
+          <h2>Trending Recipes</h2>
+        </section>
+        <section id="slideshow">
+          <section class="slide-wrapper">
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                <h1 class="slide-number"></h1>
+            </div>
+          </section>
+      </section>
+        <section class="article_footer"><button class="article_footer_button">Read More</button></section>
+      </article>
+    </div>
+
+    <div class="column" id="column_2">
+      <article class="article-recepie">
+        <section class="article_recipe_title">
+          <h2>Top Rated Recipes</h2>
+        </section>
+
+        <section id="slideshow">
+          <section class="slide-wrapper">
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                <h1 class="slide-number"></h1>
+            </div>
+          </section>
+      </section>
+        <section class="article_footer"><button class="article_footer_button">Read More</button></section>
+      </article>
+    </div>
+
+    <div class="column" id="column_3">
+      <article class="article-recepie">
+        <section class="article_recipe_title">
+          <h2>My Liked Recipes</h2>
+        </section>
+        <section id="slideshow">
+          <section class="slide-wrapper">
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                <h1 class="slide-number"></h1>
+            </div>
+          </section>
+      </section>
+        <section class="article_footer"><button class="article_footer_button">Read More</button></section>
+      </article>
+    </div>
+
+    <div class="column" id="column_4">
+      <article class="article-recepie">
+        <section class="article_recipe_title">
+          <h2>Recipe Recommendations</h2>
+        </section>
+        <section id="slideshow">
+          <section class="slide-wrapper">
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                  <h1 class="slide-number"></h1>
+              </div>
+              <div class="slide">
+                <h1 class="slide-number"></h1>
+            </div>
+          </section>
+      </section>
+        <section class="article_footer"><button class="article_footer_button">Read More</button></section>
+      </article>
+    </div>
+  </section>
+
+  
+
+
+  <section id="inbetween_text">
+    <ul id="inbetween_text_ul">
+      <li>
+        <h2 id="inbetween_text_h2">Try Some Of Our</h2>
+      </li>
+      <li>
+        <h3 id="inbetween_text_h3">Tasty Recipes!</h3>
+      </li>
+    </ul>
+  </section>
+
+  <section id="foods_to_try">
+    <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+      slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+      <swiper-slide>
+        <article class="recipe">
+          <header class="recipe-header">
+            <div class="recipe-number">1</div>
+            <button class="like-button">Like</button>
+          </header>
+          <img src="img/recipe1.jpg" alt="Recipe 1">
+          <h2>Spaghetti Carbonara</h2>
+          <div class="recipe-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
+        </article>
+      </swiper-slide>
+      <swiper-slide>
+        <article class="recipe">
+          <header class="recipe-header">
+            <div class="recipe-number">1</div>
+            <button class="like-button">Like</button>
+          </header>
+          <img src="img/recipe1.jpg" alt="Recipe 1">
+          <h2>Spaghetti Carbonara</h2>
+          <div class="recipe-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
+        </article>
+      </swiper-slide>
+      <swiper-slide>
+        <article class="recipe">
+          <header class="recipe-header">
+            <div class="recipe-number">1</div>
+            <button class="like-button">Like</button>
+          </header>
+          <img src="img/recipe1.jpg" alt="Recipe 1">
+          <h2>Spaghetti Carbonara</h2>
+          <div class="recipe-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
+        </article>
+      </swiper-slide>
+      <swiper-slide>
+        <article class="recipe">
+          <header class="recipe-header">
+            <div class="recipe-number">1</div>
+            <button class="like-button">Like</button>
+          </header>
+          <img src="img/recipe1.jpg" alt="Recipe 1">
+          <h2>Spaghetti Carbonara</h2>
+          <div class="recipe-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
+        </article>
+      </swiper-slide>
+      <swiper-slide>
+        <article class="recipe">
+          <header class="recipe-header">
+            <div class="recipe-number">1</div>
+            <button class="like-button">Like</button>
+          </header>
+          <img src="img/recipe1.jpg" alt="Recipe 1">
+          <h2>Spaghetti Carbonara</h2>
+          <div class="recipe-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
+        </article>
+      </swiper-slide>
+      <swiper-slide>
+        <article class="recipe">
+          <header class="recipe-header">
+            <div class="recipe-number">1</div>
+            <button class="like-button">Like</button>
+          </header>
+          <img src="img/recipe1.jpg" alt="Recipe 1">
+          <h2>Spaghetti Carbonara</h2>
+          <div class="recipe-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
+        </article>
+      </swiper-slide>
+      <swiper-slide>
+        <article class="recipe">
+          <header class="recipe-header">
+            <div class="recipe-number">1</div>
+            <button class="like-button">Like</button>
+          </header>
+          <img src="img/recipe1.jpg" alt="Recipe 1">
+          <h2>Spaghetti Carbonara</h2>
+          <div class="recipe-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
+        </article>
+      </swiper-slide>
+      <swiper-slide>
+        <article class="recipe">
+          <header class="recipe-header">
+            <div class="recipe-number">1</div>
+            <button class="like-button">Like</button>
+          </header>
+          <img src="img/recipe1.jpg" alt="Recipe 1">
+          <h2>Spaghetti Carbonara</h2>
+          <div class="recipe-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
+        </article>
+      </swiper-slide>
+      <swiper-slide>
+        <article class="recipe">
+          <header class="recipe-header">
+            <div class="recipe-number">1</div>
+            <button class="like-button">Like</button>
+          </header>
+          <img src="img/recipe1.jpg" alt="Recipe 1">
+          <h2>Spaghetti Carbonara</h2>
+          <div class="recipe-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <p>Prep Time: 10 minutes<br>Cook Time: 20 minutes<br>Total Time: 30 minutes</p>
+        </article>
+      </swiper-slide>
+    </swiper-container>
+  </section>
+
   <footer>
     <section class="section_footer">
       <h3 class="h3_footer">Companies</h3>
@@ -292,8 +346,8 @@
         <li class="footer_li"><a href="#" class="footer_a"> Contact Us</a></li>
       </ul>
     </section>
-  
-    <section  class="section_footer">
+
+    <section class="section_footer">
       <h3 class="h3_footer">Get Help</h3>
       <ul class="footer_ul">
         <li class="footer_li"><a href="#" class="footer_a">FAQ</a></li>
@@ -302,8 +356,8 @@
         <li class="footer_li"><a href="#" class="footer_a">Privacy Policy</a></li>
       </ul>
     </section>
-  
-    <section  class="section_footer">
+
+    <section class="section_footer">
       <h3 class="h3_footer">Online Shop</h3>
       <ul class="footer_ul">
         <li class="footer_li"><a href="#" class="footer_a">Shop Now</a></li>
@@ -311,8 +365,8 @@
         <li class="footer_li"><a href="#" class="footer_a">Sale</a></li>
       </ul>
     </section>
-  
-    <section  class="section_footer">
+
+    <section class="section_footer">
       <h3 class="h3_footer"> Follow Us</h3>
       <ul class="footer_ul">
         <li class="footer_li"><a href="#" class="footer_a"><i class="fab fa-facebook"></i> Facebook</a></li>
@@ -323,10 +377,8 @@
     </section>
   </footer>
 
-  
-  
-  
-      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    <script src="App.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script src="App.js"></script>
 </body>
+
 </html>
