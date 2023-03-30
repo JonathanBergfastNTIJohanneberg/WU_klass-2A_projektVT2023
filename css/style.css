@@ -484,6 +484,12 @@ footer p {
 }
 
 .explore_h2 {
+  border: 1px solid black;
+  border-radius: 3px;
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
   font-size: 1em;
   font-weight: bold;
   margin: 0;
@@ -492,6 +498,8 @@ footer p {
   background-color: #eee;
   color: #333;
 }
+
+
 
 .explore_main {
   display: grid;
@@ -516,6 +524,11 @@ footer p {
   margin-bottom: 20px;
   transition: transform 0.3s ease-in-out;
   position: relative;
+}
+
+.explore_article:hover .explore_h2{
+    background-position: left bottom;
+    color: white;
 }
 
 .explore_article img {
