@@ -504,7 +504,7 @@ footer p {
 #explore_section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 20px;
 }
 
@@ -624,7 +624,7 @@ footer p {
   }
 
   .slide-number-text {
-    right: 15%;
+    right: auto;
   }
 
   .column {
