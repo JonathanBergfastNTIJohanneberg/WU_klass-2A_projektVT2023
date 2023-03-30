@@ -43,11 +43,8 @@ header {
   padding: 0 20px;
 }
 
-#logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
+#logo_img{
+  width: 7%;
 }
 
 nav ul {
@@ -925,6 +922,14 @@ html::-webkit-scrollbar-thumb {
   .logo {
     margin-bottom: 20px;
   }
+
+  #logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  
 
   nav {
     display: none;
