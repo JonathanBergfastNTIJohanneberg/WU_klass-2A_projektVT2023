@@ -512,7 +512,7 @@ footer p {
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all .5s ease-out;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bold;
   margin: 0;
   padding: 10px;
@@ -767,7 +767,7 @@ html::-webkit-scrollbar-thumb {
 
 .menu_recommendation .swiper .title {
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 3em;
   color: var(--white);
   background: var(--peru);
   margin-bottom: 3rem;
