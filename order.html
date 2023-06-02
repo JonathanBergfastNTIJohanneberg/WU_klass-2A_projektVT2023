@@ -29,43 +29,43 @@
         <fieldset class="box">
           <article class="inputBox" id="input_box_name">
             <span>full name</span>
-            <input type="text" placeholder="enter your name">
+            <input type="text" placeholder="enter your name" id="name">
           </article>
         </fieldset>
         <fieldset class="box">
           <article class="inputBox" id="input_box_food">
             <span>food name</span>
-            <input type="text" placeholder="food you want">
+            <input type="text" placeholder="food you want" id="food">
           </article>
         </fieldset>
         <fieldset class="box">
           <article class="inputBox" id="input_box_order">
             <span>order details</span>
-            <input type="text" placeholder="specifics with food">
+            <input type="text" placeholder="specifics with food" id="order-details">
           </article>
         </fieldset>
         <fieldset class="box">
           <article class="inputBox" id="input_box_address">
             <span>your address</span>
-            <textarea name="Your Name" placeholder="enter your address" id="#" cols="30" rows="10"></textarea>
+            <textarea name="Your Name" placeholder="enter your address" id="address" cols="30" rows="10"></textarea>
           </article>
         </fieldset>
         <fieldset class="box">
           <article class="inputBox" id="input_box_numbe">
             <span>number</span>
-            <input type="number" placeholder="enter your number">
+            <input type="number" placeholder="enter your number" id="number">
           </article>
         </fieldset>
         <fieldset class="box">
           <article class="inputBox" id="input_box_much">
             <span>how much</span>
-            <input type="number" placeholder="how many you want">
+            <input type="number" placeholder="how many you want" id="quantity">
           </article>
         </fieldset>
         <fieldset class="box">
           <article class="inputBox" id="input_box_when">
             <span>when you want</span>
-            <input type="datetime-local">
+            <input type="datetime-local" id="when">
           </article>
         </fieldset>
         <article class="inputBox" id="input_box_map">
@@ -75,6 +75,14 @@
             allowfullscreen="" loading="lazy"></iframe>
         </article>
       </section>
+
+      <section id="order-summary">
+        <h2>Order Summary</h2>
+        <article id="summary-details">
+        </article>
+      </section>
+
+      <button type="submit">Show Order</button>
     </form>
   </section>
   <footer>
@@ -87,5 +95,49 @@
     <p>© 2023 Recepticus AB</p>
   </footer>
   <script src="js/script.js"></script>
+  <script>
+const orderForm = document.querySelector('form');
+const orderSummary = document.querySelector('#summary-details');
+const showOrderButton = document.querySelector('form button[type="submit"]');
+
+let isOrderShown = false;
+let orderSummaryHTML = '';
+let emptyOrderSummaryHTML = '';
+
+orderForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const name = document.querySelector('#name').value;
+  const food = document.querySelector('#food').value;
+  const orderDetails = document.querySelector('#order-details').value;
+  const address = document.querySelector('#address').value;
+  const number = document.querySelector('#number').value;
+  const quantity = document.querySelector('#quantity').value;
+  const when = document.querySelector('#when').value;
+
+  const orderSummaryHTML = `
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Food:</strong> ${food}</p>
+    <p><strong>Order Details:</strong> ${orderDetails}</p>
+    <p><strong>Address:</strong> ${address}</p>
+    <p><strong>Number:</strong> ${number}</p>
+    <p><strong>Quantity:</strong> ${quantity}</p>
+    <p><strong>When:</strong> ${when}</p>
+  `;
+
+  emptyOrderSummaryHTML = '';
+
+  if (isOrderShown) {
+    orderSummary.innerHTML = emptyOrderSummaryHTML;
+    showOrderButton.textContent = 'Show Order';
+  } else {
+    orderSummary.innerHTML = orderSummaryHTML;
+    showOrderButton.textContent = 'Hide Order';
+  }
+
+  orderSummary.scrollIntoView({ behavior: 'smooth' });
+  isOrderShown = !isOrderShown;
+});
+  </script>
 </body>
 </html>
