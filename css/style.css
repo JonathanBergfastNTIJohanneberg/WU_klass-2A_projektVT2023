@@ -162,26 +162,26 @@ nav a:hover {
 
 /* styling för varje slide*/
 .slide:nth-child(1) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/breakfeast.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/breakfeast.jpg);
   background-position: center;
   background-size: cover;
 }
 
 
 .slide:nth-child(2) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/culinary_tools.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/culinary_tools.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .slide:nth-child(3) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/recipe1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/recipe1.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .slide:nth-child(4) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/taco_mexicana.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/taco_mexicana.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -320,7 +320,7 @@ swiper-slide img {
 .welcome_to_page {
   height: 400px;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/taco_mexicana.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/taco_mexicana.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -404,7 +404,7 @@ swiper-slide img {
 
 
 .carousel_cell {
-  background-image: url(/img/recipe1.jpg);
+  background-image: url(img/recipe1.jpg);
   background-size: cover;
   background-position: center center;
 
