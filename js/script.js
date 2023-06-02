@@ -3,9 +3,6 @@ const navLinks = document.querySelector('.nav-links');
 const likeButtons = document.querySelectorAll('.like-button');
 const filterButtons = document.querySelectorAll('.filter_button');
 
-
-
-
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         const filterValue = button.dataset.filter;
